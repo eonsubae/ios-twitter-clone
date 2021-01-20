@@ -9,21 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
+        NavigationView {
             
-//            Color.blue.ignoresSafeArea()
-                        
-            VStack {
-//                Spacer()
+            TabView {
+                Text("Feed")
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
                 
-                Text("Hello, how are you doing?")
-                    .padding()
+                Text("Search")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Search")
+                    }
                 
-                Text("I'm doing just fine")
-                    .padding()
+                Text("Message")
+                    .tabItem {
+                        Image(systemName: "envelope")
+                        Text("Messages")
+                    }
             }
+            .navigationBarTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+               
         }
-        
     }
 }
 
