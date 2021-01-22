@@ -11,6 +11,7 @@
 		4204FF5625AC8E610030AC6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204FF5525AC8E610030AC6F /* ContentView.swift */; };
 		4204FF5825AC8E690030AC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4204FF5725AC8E690030AC6F /* Assets.xcassets */; };
 		4204FF5B25AC8E690030AC6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4204FF5A25AC8E690030AC6F /* Preview Assets.xcassets */; };
+		428802C825BB1A1900A62FC8 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428802C725BB1A1900A62FC8 /* TweetCell.swift */; };
 		42A4128C25B88FBC0084C955 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A4128B25B88FBC0084C955 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		4204FF5725AC8E690030AC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4204FF5A25AC8E690030AC6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4204FF5C25AC8E690030AC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428802C725BB1A1900A62FC8 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		42A4128B25B88FBC0084C955 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 			children = (
 				4204FF5525AC8E610030AC6F /* ContentView.swift */,
 				42A4128B25B88FBC0084C955 /* FeedView.swift */,
+				428802C725BB1A1900A62FC8 /* TweetCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				4204FF5625AC8E610030AC6F /* ContentView.swift in Sources */,
 				42A4128C25B88FBC0084C955 /* FeedView.swift in Sources */,
 				4204FF5425AC8E610030AC6F /* TwitterSwiftUITutorialApp.swift in Sources */,
+				428802C825BB1A1900A62FC8 /* TweetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
