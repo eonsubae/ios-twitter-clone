@@ -13,7 +13,7 @@ struct FeedView: View {
             ScrollView {
                 VStack {
                     ForEach(0..<10) { _ in
-                        Text("Tweet Cell")
+                        TweetCell()
                     }
                 }.padding()
             }
