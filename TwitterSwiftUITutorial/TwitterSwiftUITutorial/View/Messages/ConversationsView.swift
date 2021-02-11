@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ConversationsView: View {
+    @State var isShowingNewMessageView = false
+    
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
                 VStack {
                     ForEach(0..<10) { _ in
-                        ConversationCell()
+                        NavigationLink(
+                            destination: Text("Chat View"),
+                            label: {
+                                ConversationCell()
+                            })
                     }
                 }.padding()
             }
@@ -29,6 +35,9 @@ struct ConversationsView: View {
             .foregroundColor(.white)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .padding()
+            .sheet(isPresented: $isShowingNewMessageView, content: {
+                SearchView()
+            })
         }
     }
 }
