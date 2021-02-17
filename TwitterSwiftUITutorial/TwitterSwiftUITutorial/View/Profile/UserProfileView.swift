@@ -13,6 +13,8 @@ struct UserProfileView: View {
             VStack {
                 ProfileHeaderView()
                     .padding()
+                
+                FilterButtonView()
             }
             
             .navigationTitle("batman")
