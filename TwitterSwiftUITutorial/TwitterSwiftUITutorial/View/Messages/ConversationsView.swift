@@ -41,7 +41,7 @@ struct ConversationsView: View {
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .padding()
             .sheet(isPresented: $isShowingNewMessageView, content: {
-                NewMessageView(show: $isShowingNewMessageView, startChat: $showChat, isEditing: )
+                NewMessageView(show: <#T##Binding<Bool>#>, startChat: <#T##Binding<Bool>#>, isEditing: <#T##Binding<Bool>#>, viewModel: <#T##SearchViewModel#>)
             })
         }
     }
