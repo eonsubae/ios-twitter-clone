@@ -19,6 +19,7 @@
 		4204FF5425AC8E610030AC6F /* TwitterSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204FF5325AC8E610030AC6F /* TwitterSwiftUITutorialApp.swift */; };
 		4204FF5625AC8E610030AC6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204FF5525AC8E610030AC6F /* ContentView.swift */; };
 		4204FF5B25AC8E690030AC6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4204FF5A25AC8E690030AC6F /* Preview Assets.xcassets */; };
+		420CB95B25F125220011189A /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CB95A25F125220011189A /* UploadTweetViewModel.swift */; };
 		4239E3EB25E5458A001DF720 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239E3EA25E5458A001DF720 /* LoginView.swift */; };
 		4239E3EF25E545A9001DF720 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239E3EE25E545A9001DF720 /* RegistrationView.swift */; };
 		4239E3F225E546D8001DF720 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239E3F125E546D8001DF720 /* CustomTextField.swift */; };
@@ -63,6 +64,7 @@
 		4204FF5525AC8E610030AC6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4204FF5A25AC8E690030AC6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4204FF5C25AC8E690030AC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420CB95A25F125220011189A /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 		4239E3EA25E5458A001DF720 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4239E3EE25E545A9001DF720 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4239E3F125E546D8001DF720 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				42A6C1F225EC7FFB00D0346A /* AuthViewModel.swift */,
 				42ED6D3B25EE64E600628FCD /* SearchViewModel.swift */,
 				42B5ABFB25EFCC5C00B71323 /* ProfileViewModel.swift */,
+				420CB95A25F125220011189A /* UploadTweetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				42B5ABFC25EFCC5C00B71323 /* ProfileViewModel.swift in Sources */,
 				4240670D25DABEF70074ECB4 /* FilterButtonView.swift in Sources */,
 				4204FF5425AC8E610030AC6F /* TwitterSwiftUITutorialApp.swift in Sources */,
+				420CB95B25F125220011189A /* UploadTweetViewModel.swift in Sources */,
 				42AAE69225E93F580067A897 /* ImagePicker.swift in Sources */,
 				145B886825D4F7EE0025DC3F /* ChatBubble.swift in Sources */,
 				145B885E25D4EDDF0025DC3F /* ConversationCell.swift in Sources */,

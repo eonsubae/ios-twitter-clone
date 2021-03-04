@@ -11,6 +11,7 @@ import Kingfisher
 struct NewTweetView: View {
     @Binding var isPresented: Bool
     @State var captionText: String = ""
+    @ObservedObject var viewModel: UploadTweetViewModel
     
     var body: some View {
         NavigationView {
@@ -36,7 +37,7 @@ struct NewTweetView: View {
                                                 .foregroundColor(.blue)
                                         }),
                                     trailing:
-                                        Button(action: {}, label: {
+                                        Button(action: { viewModel.uploadTweet(caption: captionText) }, label: {
                                             Text("Tweet")
                                                 .padding(.horizontal)
                                                 .padding(.vertical, 8)
