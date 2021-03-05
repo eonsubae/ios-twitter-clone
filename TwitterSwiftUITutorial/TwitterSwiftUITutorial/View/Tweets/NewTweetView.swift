@@ -13,6 +13,11 @@ struct NewTweetView: View {
     @State var captionText: String = ""
     @ObservedObject var viewModel: UploadTweetViewModel
     
+    init(isPresented: Binding<Bool>) {
+        self._isPresented = isPresented
+        self.viewModel = UploadTweetViewModel(isPresented: isPresented)
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -37,7 +42,11 @@ struct NewTweetView: View {
                                                 .foregroundColor(.blue)
                                         }),
                                     trailing:
-                                        Button(action: { viewModel.uploadTweet(caption: captionText) }, label: {
+                                        Button(action: {
+                                            viewModel.uploadTweet(caption: captionText) { _ in
+                                                isPresented.toggle()
+                                            }
+                                        }, label: {
                                             Text("Tweet")
                                                 .padding(.horizontal)
                                                 .padding(.vertical, 8)
