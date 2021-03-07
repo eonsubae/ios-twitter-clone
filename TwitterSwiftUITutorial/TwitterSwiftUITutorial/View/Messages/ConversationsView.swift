@@ -10,10 +10,12 @@ import SwiftUI
 struct ConversationsView: View {
     @State var isShowingNewMessageView = false
     @State var showChat = false
+    @State private var inSearchMode = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            NavigationLink(destination: ChatView(),
+            
+            NavigationLink(destination: ChatView(user: <#T##User#>),
                            isActive: $showChat,
                            label: {})
             
@@ -21,7 +23,7 @@ struct ConversationsView: View {
                 VStack {
                     ForEach(0..<10) { _ in
                         NavigationLink(
-                            destination: ChatView(),
+                            destination: ChatView(user: <#T##User#>),
                             label: {
                                 ConversationCell()
                             })
