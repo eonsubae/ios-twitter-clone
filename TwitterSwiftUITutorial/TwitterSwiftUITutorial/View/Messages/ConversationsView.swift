@@ -11,19 +11,20 @@ struct ConversationsView: View {
     @State var isShowingNewMessageView = false
     @State var showChat = false
     @State private var inSearchMode = false
+    @ObservedObject var viewModel = ConversationsViewModel()
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             
-            NavigationLink(destination: ChatView(user: <#T##User#>),
-                           isActive: $showChat,
-                           label: {})
+//            NavigationLink(destination: ChatView(user: ),
+//                           isActive: $showChat,
+//                           label: {})
             
             ScrollView {
                 VStack {
-                    ForEach(0..<10) { _ in
+                    ForEach(viewModel.recentMessages) { message in
                         NavigationLink(
-                            destination: ChatView(user: <#T##User#>),
+                            destination: ChatView(user: message.user),
                             label: {
                                 ConversationCell()
                             })
@@ -40,10 +41,10 @@ struct ConversationsView: View {
             })
             .background(Color(.systemBlue))
             .foregroundColor(.white)
-            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            .clipShape(Circle())
             .padding()
             .sheet(isPresented: $isShowingNewMessageView, content: {
-                NewMessageView(show: $isShowingNewMessageView, startChat: $showChat, isEditing: <#T##Binding<Bool>#>, viewModel: <#T##SearchViewModel#>)
+                NewMessageView(show: $isShowingNewMessageView, startChat: $showChat, isEditing: $inSearchMode)
             })
         }
     }
