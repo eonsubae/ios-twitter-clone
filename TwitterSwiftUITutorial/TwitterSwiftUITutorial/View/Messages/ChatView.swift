@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     let user: User
-    let viewModel: ChatViewModel
+    @ObservedObject var viewModel: ChatViewModel
     @State var messageText: String = ""
     
     init(user: User) {
