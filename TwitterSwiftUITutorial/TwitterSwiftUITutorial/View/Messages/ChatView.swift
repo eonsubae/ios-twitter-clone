@@ -21,7 +21,7 @@ struct ChatView: View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                    ForEach(MOCK_MESSAGES) { message in
+                    ForEach(viewModel.messages) { message in
                         MessageView(message: message)
                     }
                 }
@@ -29,10 +29,12 @@ struct ChatView: View {
             
             MessageInputView(messageText: $messageText, action: sendMessage)
                 .padding()
+            
         }.navigationTitle(user.username)
     }
     
     func sendMessage() {
         viewModel.sendMessages(messageText)
+        messageText = ""
     }
 }
